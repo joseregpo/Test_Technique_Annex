@@ -1,0 +1,171 @@
+body > nav:nth-child(1) {
+    display: flex;
+    flex-flow: row;
+}
+body > nav:nth-child(1) > ul:nth-child(1) {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+body > main:nth-child(2) > section:nth-child(2) {
+  display: flex;
+}
+footer{
+  padding-left: 2%;
+}
+.navigationList{
+  list-style: none;
+}
+.navigationList > li > a{
+  color: inherit;
+  text-decoration: none;
+}
+.AdrBoxes{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3%;
+}
+.NroTel, .Adr{
+  font-weight: bold;
+}
+.Accueil{
+  padding: 5%;
+  background: #af2a2a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fff, #af2a2a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fff, #af2a2a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #fff, #af2a2a);
+}
+.card {
+  width: 20%;
+} 
+.ExtraText {
+  display: flex;
+  padding-top: 2%;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 3%;
+  font-family: inherit;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  font-size: 1.25em;
+}
+.BgDeco{
+  padding: 2%;
+  background-color: #af2a2a;
+  width: 50%;
+  border-radius: 25px;
+  color: white;
+}
+.SecondDeco{
+  display: flex;
+  align-self: end;
+}
+.BarreRecherche{
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3%;
+  flex-direction: column;
+}
+.inputRecherche{
+  width: 70% !important;
+}
+.navigationList > li:hover{
+  color: #af2a2a;
+}
+.MenuMobile{
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+.show{
+  opacity: 1;
+  height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 1.2em !important;
+  }
+  .AdrBoxes {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  p {
+    padding: 4%;
+  }
+    .card {
+    width: 91%;
+    align-self: center;
+  }
+  .BgDeco {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .MobileP {
+    width: 95%;
+    align-self: center;
+  }
+  .DecoBgMobileText{
+    background-color: #af2a2a;
+    width: 95%;
+    border-radius: 25px;
+    color: white;
+    font-family: inherit;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+  }
+  .MobileContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .ScrollDownMenu {
+    margin: 3%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navigation{
+    display: none !important;
+  }
+  .NotMobile{
+    display: none;
+  }
+  .ScrollDownMenu{
+    font-size: 3em;
+    padding: 2%;
+    color: #af2a2a;
+  }
+  .ScrollDownMenu:hover{
+    color: black;
+  }
+  .MenuMobile{
+    list-style: none;
+    position: absolute;
+    background-color: #af2a2a;
+    width: 100%;
+    font-size: 1.25em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  .mobileBg{
+    background: #af2a2a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #af2a2a); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #af2a2a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #fff, #af2a2a);
+  }
+}
+a{
+  text-decoration: none !important;
+  color: inherit !important;
+}
